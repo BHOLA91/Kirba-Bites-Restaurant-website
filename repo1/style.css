@@ -1,0 +1,148 @@
+    body {
+      margin: 0;
+      background:#c3f2e7;
+      color: #333;
+    }
+
+    header {
+      background: #e63946;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1rem;
+      font-weight: 500;
+    }
+
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      padding: 2rem;
+    }
+
+    .cart {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      padding: 2rem;
+    }
+
+    .dish {
+      background: white;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .dish img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .dish h3 {
+      margin: 0.5rem 0;
+    }
+
+    .dish p {
+      color: #555;
+      margin: 0.3rem 0;
+    }
+
+    .dish button {
+      background: #457b9d;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 0.5rem;
+    }
+
+    .dish button:hover {
+      background: #1d3557;
+    }
+
+    .cart {
+      position: fixed;
+      right: 20px;
+      top: 80px;
+      background: white;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      width: 300px;
+      max-height: 70vh;
+      overflow-y: auto;
+    }
+
+    .cart h2 {
+      margin-top: 0;
+      color: #e63946;
+    }
+
+    .cart-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.5rem;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 0.5rem;
+    }
+
+    .cart-item button {
+      background: #e63946;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      padding: 0.2rem 0.5rem;
+      cursor: pointer;
+    }
+
+
+    .cart-item button:hover {
+      background: #a4161a;
+    }
+
+    .total {
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+
+    .order-btn {
+      background: #2a9d8f;
+      color: white;
+      border: none;
+      width: 100%;
+      padding: 0.7rem;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 1rem;
+      font-size: 1rem;
+    }
+
+    .order-btn:hover {
+      background: #21867a;
+    }
+
+    footer {
+      background: #1d3557;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KIRBA BITES</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🍽️ KIRBA BITES </h1>
+    <p>Best Restaurant in all of Burla</p>
+    <nav>
+      <button onclick="toggleGrid()">Cart</button>
+      <a href="#menu">Menu</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="menu" class="menu">
+    <div class="dish">
+      <img src="biriyani.jpg" alt="Chicken biriyani">
+      <h3>Chicken Biriyani</h3>
+      <p>Fresh Chicken(unlike your hostel's) with sambalpur's best spices served on freshly plucked banana leaves</p>
+      <p><strong>₹200.00</strong></p>
+      <button onclick="addToCart('Chicken Biriyani', 160.00)">Add to Cart</button>
+    </div>
+
+    <div class="dish">
+      <img src="vegbiriyani.jpg" alt="Veg Biriyani">
+      <h3>Veg Biriyani</h3>
+      <p>Fragrant basmati rice layered with paneer,seasonal vegetables and aromatic spices, slow-cooked with saffron for a delicate, regal flavor</p>
+      <p><strong>₹180</strong></p>
+      <button onclick="addToCart('Veg Biriyani', 140)">Add to Cart</button>
+    </div>
+
+    <div class="dish">
+      <img src="chroll.jpg" alt="Chicken Roll">
+      <h3>Chicken Roll</h3>
+      <p>Tender spiced chicken wrapped in a warm paratha with caramelized onions, fresh herbs, and a hint of mint aioli</p>
+      <p><strong>₹60</strong></p>
+      <button onclick="addToCart('Chicken Roll', 60)">Add to Cart</button>
+    </div>
+
+    <div class="dish">
+      <img src="egch.jpg" alt="egg chicken roll">
+      <h3>Egg Chicken Roll</h3>
+      <p>Juicy spiced chicken and a soft-layered egg wrap, rolled in flaky paratha with onions, herbs, and a touch of tangy sauce</p>
+      <p><strong>₹70</strong></p>
+      <button onclick="addToCart('Egg Chicken Roll', 70)">Add to Cart</button>
+    </div>
+    <div class="dish">
+      <img src="egch.jpg" alt="egg chicken roll">
+      <h3>Double Egg Chicken Roll</h3>
+      <p>Juicy spiced chicken and a thick-layered egg wrap, rolled in flaky paratha with onions, herbs, and a touch of tangy sauce</p>
+      <p><strong>₹80</strong></p>
+      <button onclick="addToCart('Double Egg Chicken Roll', 80)">Add to Cart</button>
+    </div>
+    <div class="dish">
+      <img src="chickchou.jpg" alt="chicken choumein">
+      <h3>Chicken choumein</h3>
+      <p>Stir-fried noodles tossed with tender chicken, crisp vegetables, and a balanced blend of soy and aromatic seasonings for a flavorful finish</p>
+      <p><strong>₹65</strong></p>
+      <button onclick="addToCart('Chicken choumein', 65)">Add to Cart</button>
+    </div>
+    <div class="dish">
+      <img src="chou.jpg" alt="mix-veg choumein">
+      <h3>Mix-Veg choumein</h3>
+      <p>Wok-tossed noodles with a vibrant mix of fresh seasonal vegetables, infused with soy, garlic, and delicate oriental spices</p>
+      <p><strong>₹55</strong></p>
+      <button onclick="addToCart('Mix-Veg choumein', 55)">Add to Cart</button>
+    </div>
+    <div class="dish">
+      <img src="chifriri.jpg" alt="chicken Fried-rice">
+      <h3>Chicken Fried-rice</h3>
+      <p>Fragrant rice stir-fried with tender chicken, crisp vegetables, and subtle soy flavors for a perfectly balanced taste</p>
+      <p><strong>₹150</strong></p>
+      <button onclick="addToCart('Chicken Fried-rice', 150)">Add to Cart</button>
+    </div>
+    <div class="dish">
+      <img src="vfr.jpg" alt="veg Fried-rice">
+      <h3>Veg Fried-rice</h3>
+      <p>Aromatic rice stir-fried with fresh seasonal vegetables and delicate soy-seasoned flavors for a light, wholesome bite</p>
+      <p><strong>₹140</strong></p>
+      <button onclick="addToCart('Veg Fried-rice', 140)">Add to Cart</button>
+    </div>
+    <div class="dish">
+      <img src="para.jpeg" alt="Lachha paratha">
+      <h3>Lachha Paratha</h3>
+      <p>Flaky, layered flatbread, crisp on the outside and soft inside</p>
+      <p><strong>₹20</strong></p>
+      <button onclick="addToCart('Lachha Paratha', 20)">Add to Cart</button>
+    </div>
+  </section>
+
+  <section id="cart" class="cart">
+    <div>
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <p class="total" id="total">Total: ₹0</p>
+        <button class="order-btn" onclick="placeOrder()">Place Order</button>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p>📞 Contact us: +91 7879001123 | kirbaeats11@gmail.com </p>
+    <p>&copy; 2025 KIRBA BITES</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
